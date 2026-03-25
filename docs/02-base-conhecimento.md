@@ -20,22 +20,41 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 
 > Você modificou ou expandiu os dados mockados? Descreva aqui.
 
-sim
+sim o componete fundo muti mercado foi alterado para fundo imobiliario pois sinto mais confiate em analise de fundo imobiliriario pois eu entendo.
 
 ---
 
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
+existem duas possibilidade injetar os dado diretos(Ctrl + V) ou pelo code Como exelo abaixo
+> ""
+import pandas as pd
+import json
+
+# CSVs
+historico = pd.read_csv('data/historico_atendimento.csv')
+transacoes = pd.read_csv('data/transacoes.csv')
+
+# JSONs
+with open('data/perfil_investidor.json', 'r', encoding='utf-8') as f:
+    perfil = json.load(f)
+
+with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
+    produtos = json.load(f)
+  ""
 
 [ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
 
 ### Como os dados são usados no prompt?
 > Os dados vão no system prompt? São consultados dinamicamente?
-
-[Sua descrição aqui]
-
+```
+text
+historico do Ususario:
+perfil investidor do Ususario:
+produtos financeiros do Ususario:
+transacoes do Ususario: ...
+```
 ---
 
 ## Exemplo de Contexto Montado

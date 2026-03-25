@@ -51,9 +51,18 @@ with open('data/produtos_financeiros.json', 'r', encoding='utf-8') as f:
 ```
 text
 historico do Ususario:
+Dados do Cliente:
+- Nome: João Silva
+- Perfil: Moderado
+- Saldo disponível: R$ 5.000
+
 perfil investidor do Ususario:
 produtos financeiros do Ususario:
-transacoes do Ususario: ...
+transacoes do Ususario:
+
+Últimas transações:
+- 01/11: Supermercado - R$ 450
+- 03/11: Streaming - R$ 55 ...
 ```
 ---
 

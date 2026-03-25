@@ -27,7 +27,7 @@ sim o componete fundo muti mercado foi alterado para fundo imobiliario pois sint
 ## Estratégia de Integração
 
 ### Como os dados são carregados?
-existem duas possibilidade injetar os dado diretos(Ctrl + V) ou pelo code Como exelo abaixo
+existem duas possibilidade injetar os dado diretos(Ctrl + V) ou pelo code Como exemplo abaixo
 > ""
 import pandas as pd
 import json
